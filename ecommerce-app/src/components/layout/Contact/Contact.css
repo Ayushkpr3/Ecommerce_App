@@ -1,0 +1,33 @@
+.contact-container {
+    height: 100vh;
+    width: 100vw;
+    display: grid;
+    place-items: center;
+    background-color: #ffffff;
+    position: fixed;
+    overflow: hidden;
+  }
+  
+  .contact-mail-btn {
+    text-decoration: none;
+    transform: translateX(-100vw);
+    animation: slideInAnimation 2s forwards;
+  }
+  
+  .contact-mail-btn > button {
+    font: 300 2vmax "Roboto", sans-serif;
+    cursor: pointer;
+    padding: 1.5vmax 3vmax;
+    transition: background-color 0.3s;
+  }
+  
+  .contact-mail-btn > button:hover {
+    background-color: #0057a3;
+  }
+  
+  @keyframes slideInAnimation {
+    to {
+      transform: translateX(0);
+    }
+  }
+  

@@ -1,0 +1,32 @@
+/* General reset and smooth scroll behavior */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  cursor: url("./images/cursor.png"), auto;
+}
+
+/* Styles for inputs of type number to hide spinner buttons */
+input[type="number"] {
+  -moz-appearance: textfield; /* Firefox */
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none; /* Chrome, Safari, Edge, Opera */
+  margin: 0;
+}
+
+/* Utility classes for text colors */
+.greenColor {
+  color: green !important;
+}
+
+.redColor {
+  color: red !important;
+}

@@ -1,0 +1,160 @@
+/* Base layout for the process order page */
+.processOrderWrapper {
+    display: flex;
+    background-color: #f8f9fa;
+    min-height: 100vh;
+    font-family: 'Arial', sans-serif;
+  }
+  
+  .processOrderContainer {
+    flex: 1;
+    padding: 20px;
+    margin-left: 220px; /* Adjust sidebar width if necessary */
+    background-color: #ffffff;
+    border-left: 1px solid #e0e0e0;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.05);
+  }
+  
+  .confirmOrderPage {
+    display: grid;
+    gap: 20px;
+  }
+  
+  .confirmOrderPage.delivered {
+    display: block;
+  }
+  
+  .orderDetails {
+    background-color: #f4f4f4;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  }
+  
+  .orderDetails h2 {
+    font-size: 20px;
+    font-weight: 600;
+    margin-bottom: 10px;
+  }
+  
+  .orderInfo {
+    margin-bottom: 20px;
+  }
+  
+  .orderInfo p {
+    margin: 5px 0;
+    color: #333;
+  }
+  
+  .status {
+    padding: 5px 10px;
+    border-radius: 5px;
+    font-weight: bold;
+  }
+  
+  .paid {
+    color: green;
+  }
+  
+  .not-paid {
+    color: red;
+  }
+  
+  .delivered {
+    color: green;
+  }
+  
+  .pending {
+    color: red;
+  }
+  
+  .cartItems {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+  
+  .cartItem {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+  
+  .cartItem img {
+    width: 50px;
+    height: 50px;
+    object-fit: cover;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+  }
+  
+  .updateOrderForm {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .updateOrderForm h2 {
+    font-size: 20px;
+    font-weight: 600;
+    margin-bottom: 10px;
+  }
+  
+  .formGroup {
+    margin-bottom: 20px;
+  }
+  
+  .formGroup label {
+    display: block;
+    margin-bottom: 5px;
+    color: #555;
+  }
+  
+  .formGroup select {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 14px;
+    outline: none;
+  }
+  
+  .submitBtn {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: #ff5722;
+    color: #fff;
+    font-size: 14px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .submitBtn:hover {
+    background-color: #e64a19;
+  }
+  
+  /* Responsive adjustments */
+  @media screen and (max-width: 600px) {
+    .processOrderContainer {
+      margin-left: 0;
+      padding: 15px;
+    }
+  
+    .orderDetails,
+    .updateOrderForm {
+      padding: 15px;
+    }
+  
+    .cartItem img {
+      width: 40px;
+      height: 40px;
+    }
+  
+    .submitBtn {
+      padding: 12px;
+    }
+  }
+  

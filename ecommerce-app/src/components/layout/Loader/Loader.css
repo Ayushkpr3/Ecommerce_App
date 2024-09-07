@@ -1,0 +1,28 @@
+.loaderContainer {
+    width: 100vw;
+    height: 100vh;
+    background-color: #f0f0f0; /* Light gray background for better visibility */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+  }
+  
+  .spinner {
+    width: 8rem; /* Adjusted size for visual consistency */
+    height: 8rem;
+    border: 5px solid rgba(0, 0, 0, 0.1); /* Light border */
+    border-top: 5px solid #3498db; /* Blue color for the spinner */
+    border-radius: 50%;
+    animation: spin 1s linear infinite;
+  }
+  
+  @keyframes spin {
+    0% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(360deg);
+    }
+  }
+  

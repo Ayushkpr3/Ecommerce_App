@@ -1,0 +1,74 @@
+.cart-item-card {
+    display: flex;
+    align-items: flex-start;
+    padding: 1vmax;
+    height: 8vmax;
+    box-sizing: border-box;
+  }
+  
+  .cart-item-image {
+    width: 5vmax;
+    object-fit: cover;
+  }
+  
+  .cart-item-details {
+    display: flex;
+    flex-direction: column;
+    margin-left: 1vmax;
+  }
+  
+  .cart-item-name {
+    font: 300 0.9vmax 'Arial', sans-serif;
+    color: rgba(24, 24, 24, 0.85);
+    text-decoration: none;
+    margin-bottom: 0.5vmax;
+  }
+  
+  .cart-item-name:hover {
+    text-decoration: underline;
+  }
+  
+  .cart-item-price {
+    font: 300 0.9vmax 'Roboto', sans-serif;
+    color: rgba(24, 24, 24, 0.75);
+    margin-bottom: 0.5vmax;
+  }
+  
+  .cart-item-remove {
+    font: 300 0.8vmax 'Roboto', sans-serif;
+    color: tomato;
+    cursor: pointer;
+    transition: color 0.3s ease;
+  }
+  
+  .cart-item-remove:hover {
+    color: darkred;
+  }
+  
+  @media screen and (max-width: 600px) {
+    .cart-item-card {
+      padding: 3vmax;
+      height: 25vmax;
+    }
+  
+    .cart-item-image {
+      width: 10vmax;
+    }
+  
+    .cart-item-details {
+      margin-left: 2vmax;
+    }
+  
+    .cart-item-name {
+      font: 300 2vmax 'Arial', sans-serif;
+    }
+  
+    .cart-item-price {
+      font: 300 1.9vmax 'Roboto', sans-serif;
+    }
+  
+    .cart-item-remove {
+      font: 300 1.8vmax 'Roboto', sans-serif;
+    }
+  }
+  

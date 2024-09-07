@@ -1,0 +1,101 @@
+/* Base layout for the product list page */
+.productListWrapper {
+    display: flex;
+    background-color: #f8f9fa;
+    min-height: 100vh;
+    font-family: 'Arial', sans-serif;
+  }
+  
+  .productListContainer {
+    flex: 1;
+    padding: 20px;
+    margin-left: 220px; /* Adjust sidebar width if necessary */
+    background-color: #ffffff;
+    border-left: 1px solid #e0e0e0;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.05);
+  }
+  
+  .productListHeading {
+    font-size: 24px;
+    font-weight: 600;
+    color: #333;
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  /* Styling for the products table */
+  .productsTable {
+    width: 100%;
+    border-collapse: collapse;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    overflow: hidden;
+  }
+  
+  .productsTable th,
+  .productsTable td {
+    padding: 12px 15px;
+    border: 1px solid #ddd;
+    text-align: left;
+  }
+  
+  .productsTable th {
+    background-color: #f4f4f4;
+    font-weight: bold;
+  }
+  
+  .productsTable tr:hover {
+    background-color: #f1f1f1;
+  }
+  
+  .greenColor {
+    color: green;
+  }
+  
+  .redColor {
+    color: red;
+  }
+  
+  .actionButtons {
+    display: flex;
+    gap: 10px;
+  }
+  
+  .editButton,
+  .deleteButton {
+    padding: 5px 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+  }
+  
+  .editButton {
+    background-color: #4caf50;
+  }
+  
+  .deleteButton {
+    background-color: #f44336;
+  }
+  
+  /* Responsive adjustments */
+  @media screen and (max-width: 600px) {
+    .productListContainer {
+      margin-left: 0;
+      padding: 15px;
+    }
+  
+    .productsTable {
+      width: 100%;
+      padding: 15px;
+      font-size: 14px;
+    }
+  
+    .editButton,
+    .deleteButton {
+      padding: 8px;
+    }
+  }
+  

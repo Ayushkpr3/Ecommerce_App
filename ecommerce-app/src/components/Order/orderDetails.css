@@ -1,0 +1,40 @@
+.orders-page {
+    background-color: #fff;
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+  }
+  
+  .orders-heading {
+    font-size: 2rem;
+    color: #333;
+    margin-bottom: 1rem;
+  }
+  
+  .orders-table {
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .statusDelivered {
+    color: green;
+    font-weight: bold;
+  }
+  
+  .statusPending {
+    color: red;
+    font-weight: bold;
+  }
+  
+  @media screen and (max-width: 600px) {
+    .orders-heading {
+      font-size: 1.5rem;
+    }
+  
+    .orders-page {
+      padding: 1rem;
+    }
+  }
+  

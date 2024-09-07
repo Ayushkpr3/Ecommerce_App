@@ -1,0 +1,51 @@
+.order-success-container {
+    margin: auto;
+    text-align: center;
+    padding: 10vmax;
+    height: 50vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .success-icon {
+    font-size: 7vmax;
+    color: tomato;
+  }
+  
+  .order-success-container h2 {
+    font-size: 2vmax;
+    margin: 2vmax 0;
+  }
+  
+  .view-orders-link {
+    background-color: rgb(51, 51, 51);
+    color: white;
+    padding: 1vmax 3vmax;
+    text-decoration: none;
+    font-size: 1vmax;
+    font-family: "Roboto", sans-serif;
+    border-radius: 4px;
+    transition: background-color 0.3s ease;
+  }
+  
+  .view-orders-link:hover {
+    background-color: rgb(35, 35, 35);
+  }
+  
+  @media screen and (max-width: 600px) {
+    .view-orders-link {
+      padding: 3vw 6vw;
+      font-size: 4vw;
+    }
+  
+    .success-icon {
+      font-size: 20vw;
+    }
+  
+    .order-success-container h2 {
+      font-size: 5vw;
+    }
+  }
+  
